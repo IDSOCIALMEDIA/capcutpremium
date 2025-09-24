@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    --bg-color: #1a0a2e;
+    --card-bg-color: #2c1a4c;
+    --primary-color: #8e44ad;
+    --secondary-color: #c0392b;
+    --text-color: #ecf0f1;
+    --border-color: #4a2a75;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 2px solid var(--primary-color);
+}
+
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://via.placeholder.com/1200x300') no-repeat center center/cover;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+header .subtitle {
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-top: 1rem;
+}
+
+main {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2, h3, h4, h5 {
+    margin-bottom: 1rem;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.packs-section {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+
+.pack-card {
+    background-color: var(--card-bg-color);
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+}
+
+.pack-card img {
+    max-width: 150px;
+    margin: 0 auto 1rem;
+    border-radius: 8px;
+}
+
+.pack-card .price {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 0.5rem 0;
+}
+
+.pack-description {
+    text-align: left;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    flex-grow: 1;
+}
+
+.pack-description p {
+    margin-bottom: 1rem;
+}
+
+.pack-description small {
+    color: #bdc3c7;
+    display: block;
+    margin-top: 1rem;
+}
+
+.btn-purchase, .btn-download {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: linear-gradient(45deg, var(--primary-color), #be2edd);
+    border: none;
+    cursor: pointer;
+    margin: 0.5rem 0.2rem;
+    text-align: center;
+}
+
+.btn-purchase:hover, .btn-download:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 20px rgba(142, 68, 173, 0.5);
+}
+
+.btn-purchase i, .btn-download i {
+    margin-right: 0.5rem;
+}
+
+.promo-section {
+    text-align: center;
+    background-color: var(--card-bg-color);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+    border: 1px solid var(--border-color);
+}
+
+.promo-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 1rem;
+    border: 2px solid var(--primary-color);
+}
+
+.download-section {
+    text-align: center;
+}
+
+.download-section h3 {
+    color: #f1c40f;
+}
+
+.os-downloads {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.os-card {
+    background-color: #000;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 350px;
+}
+
+.os-card h4 i {
+    margin-right: 0.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    background-color: #000;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    .packs-section {
+        flex-direction: column;
+        align-items: center;
+    }
+}
